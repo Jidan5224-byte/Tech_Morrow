@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Take a quick quiz to check your e-waste awareness.">
+  <title>E-waste awareness quiz | TECH-MORROW</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><b class="brand-mark" aria-hidden="true">↻</b> TECH-MORROW</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="types.html">E-waste basics</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="estimator.html">Estimator</a>
+      <a class="current" href="quiz.html" aria-current="page">Quick quiz</a>
+      <a href="tech_shop.html">Tech shop</a>
+      <a class="nav-cta" href="pledge.html">Make a pledge ↗</a>
+      <section class="nav-tools" aria-label="Appearance settings">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">◐</button>
+      </section>
+    </nav>
+  </header>
+  <main>
+    <section class="quiz-hero wrap">
+      <p class="eyebrow"><b class="dot" aria-hidden="true"></b> QUICK AWARENESS QUIZ</p>
+      <h1>Know your e-waste<br><strong>next steps?</strong></h1>
+      <p class="hero-intro">Answer five quick questions about electronic waste, safe reuse, and recycling. Then check your score.</p>
+    </section>
+    <section class="quiz-area wrap">
+      <form id="quiz-form" class="quiz-form">
+        <fieldset class="quiz-question">
+          <legend><small>01</small> Which item is e-waste when it is unwanted or broken?</legend>
+          <label><input type="radio" name="q1" value="a" required> A banana peel</label>
+          <label><input type="radio" name="q1" value="b"> A mobile phone</label>
+          <label><input type="radio" name="q1" value="c"> A paper bag</label>
+        </fieldset>
+        <fieldset class="quiz-question">
+          <legend><small>02</small> A working device you no longer need should first be considered for…</legend>
+          <label><input type="radio" name="q2" value="a" required> Reuse, donation, or resale</label>
+          <label><input type="radio" name="q2" value="b"> Burning it outdoors</label>
+          <label><input type="radio" name="q2" value="c"> Throwing it into a regular bin</label>
+        </fieldset>
+        <fieldset class="quiz-question">
+          <legend><small>03</small> Where should unwanted electronics be taken?</legend>
+          <label><input type="radio" name="q3" value="a" required> Any street-side bin</label>
+          <label><input type="radio" name="q3" value="b"> An authorised e-waste collection point</label>
+          <label><input type="radio" name="q3" value="c"> A riverbank</label>
+        </fieldset>
+        <fieldset class="quiz-question">
+          <legend><small>04</small> What should you do with personal data before handing over a device?</legend>
+          <label><input type="radio" name="q4" value="a" required> Leave it for the next owner</label>
+          <label><input type="radio" name="q4" value="b"> Back up important files and erase the device</label>
+          <label><input type="radio" name="q4" value="c"> Write your passwords on it</label>
+        </fieldset>
+        <fieldset class="quiz-question">
+          <legend><small>05</small> Should loose batteries go in household rubbish?</legend>
+          <label><input type="radio" name="q5" value="a" required> Yes, always</label>
+          <label><input type="radio" name="q5" value="b"> No, follow local battery collection guidance</label>
+          <label><input type="radio" name="q5" value="c"> Only if they are rechargeable</label>
+        </fieldset>
+        <p class="quiz-actions"><button class="button button-dark" type="submit">Check my answers →</button><button class="reset-button" type="reset">Start again</button></p>
+      </form>
+      <aside id="quiz-result" class="quiz-result" aria-live="polite" aria-atomic="true">
+        <b class="quiz-result-icon" aria-hidden="true">✳</b><p class="eyebrow">YOUR RESULT</p><h2>Ready when you are.</h2><p>Complete the five questions to see your score and a quick tip.</p>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <section class="wrap footer-content" aria-label="Site information">
+      <section class="footer-brand" aria-label="About TECH-MORROW"><a class="brand brand-footer" href="index.html"><b class="brand-mark" aria-hidden="true">↻</b> TECH-MORROW</a><p>A student project for a cleaner digital future.</p></section>
+      <section class="footer-contact"><h2>Get in touch</h2><a href="mailto:mirzaayan85500@gmail.com">mirzaayan85500@gmail.com</a><a href="review.html">Leave a website review ↗</a></section>
+      <section class="footer-resources" aria-label="Explore e-waste resources"><h2>Explore e-waste resources</h2><nav class="footer-link-grid" aria-label="External e-waste resources"><a href="https://globalewaste.org/" target="_blank" rel="noopener noreferrer">Global E-waste Monitor</a><a href="https://www.who.int/news-room/fact-sheets/detail/electronic-waste-%28e-waste%29" target="_blank" rel="noopener noreferrer">World Health Organization</a><a href="https://weee-forum.org/" target="_blank" rel="noopener noreferrer">WEEE Forum</a><a href="https://www.basel.int/Implementation/Overview/tabid/4063/Default.aspx" target="_blank" rel="noopener noreferrer">Basel Convention</a><a href="https://www.epa.gov/recycle/electronics-donation-and-recycling" target="_blank" rel="noopener noreferrer">US EPA</a><a href="https://cpcb.gov.in/e-waste/" target="_blank" rel="noopener noreferrer">India CPCB</a><a href="https://www.gov.uk/guidance/regulations-waste-electrical-and-electronic-equipment" target="_blank" rel="noopener noreferrer">UK WEEE information</a></nav></section>
+    </section>
+    <section class="wrap footer-bottom" aria-label="Footer notes"><p>Learn · Act · Recycle</p><p>External links open in a new tab.</p></section>
+  </footer>
+  <script src="quiz.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

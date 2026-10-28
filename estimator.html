@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Estimate the approximate weight of your household's unwanted electronics.">
+  <title>E-waste estimator | TECH-MORROW</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><b class="brand-mark" aria-hidden="true">↻</b> TECH-MORROW</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="types.html">E-waste basics</a>
+      <a href="solutions.html">Solutions</a>
+      <a class="current" href="estimator.html" aria-current="page">Estimator</a>
+      <a href="quiz.html">Quick quiz</a>
+      <a href="tech_shop.html">Tech shop</a>
+      <a class="nav-cta" href="pledge.html">Make a pledge ↗</a>
+    <section class="nav-tools" aria-label="Appearance settings">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">◐</button>
+      </section>
+      </nav>
+  </header>
+  <main>
+    <section class="estimator-hero wrap">
+      <div>
+        <p class="eyebrow"><b class="dot" aria-hidden="true"></b> A QUICK HOUSEHOLD ESTIMATE</p>
+        <h1>How much tech<br>is <strong>ready to go?</strong></h1>
+        <p class="hero-intro">Enter the number of unwanted devices you have. We’ll estimate their combined weight and point you toward a responsible next step.</p>
+      </div>
+      <figure class="estimator-hero-mark" aria-hidden="true"><b class="estimator-mark-unit">kg</b><strong>↻</strong><small>ESTIMATE<br>THEN RECYCLE</small></figure>
+    </section>
+    <section class="estimator-layout wrap">
+      <section class="estimator-form-panel">
+        <p class="eyebrow">YOUR ITEMS</p>
+        <h2>Count what you have.</h2>
+        <p class="estimator-intro">Use whole numbers. Leave a field at zero if you don’t have that item.</p>
+        <form id="estimator-form">
+          <div class="device-row"><label for="phones"><b class="device-icon" aria-hidden="true">▣</b><small><strong>Phones</strong><br>Approx. 0.2 kg each</small></label><input id="phones" name="phones" type="number" min="0" max="999" step="1" value="0" inputmode="numeric"></div>
+          <div class="device-row"><label for="tablets"><b class="device-icon" aria-hidden="true">▤</b><small><strong>Tablets</strong><br>Approx. 0.5 kg each</small></label><input id="tablets" name="tablets" type="number" min="0" max="999" step="1" value="0" inputmode="numeric"></div>
+          <div class="device-row"><label for="laptops"><b class="device-icon" aria-hidden="true">▱</b><small><strong>Laptops</strong><br>Approx. 2 kg each</small></label><input id="laptops" name="laptops" type="number" min="0" max="999" step="1" value="0" inputmode="numeric"></div>
+          <div class="device-row"><label for="monitors"><b class="device-icon" aria-hidden="true">▭</b><small><strong>Monitors / TVs</strong><br>Approx. 5 kg each</small></label><input id="monitors" name="monitors" type="number" min="0" max="999" step="1" value="0" inputmode="numeric"></div>
+          <div class="device-row"><label for="accessories"><b class="device-icon" aria-hidden="true">⌁</b><small><strong>Chargers / small accessories</strong><br>Approx. 0.1 kg each</small></label><input id="accessories" name="accessories" type="number" min="0" max="999" step="1" value="0" inputmode="numeric"></div>
+          <p class="estimator-actions"><button class="button button-dark" type="submit">Estimate my e-waste →</button><button class="reset-button" id="reset-estimate" type="reset">Reset</button></p>
+        </form>
+      </section>
+      <aside class="estimate-result" aria-live="polite" aria-atomic="true">
+        <p class="eyebrow eyebrow-light">YOUR ESTIMATE</p>
+        <output class="estimate-number"><strong id="estimate-weight">0.0</strong><small class="estimate-unit">kg</small></output>
+        <p class="result-caption">approximate total device weight</p>
+        <div class="result-divider"></div>
+        <p class="result-count"><strong id="estimate-count">0</strong> items counted</p>
+        <p class="result-message" id="result-message">Add your device counts to see an estimate.</p>
+        <a class="button button-lime" href="pledge.html">Find a collection point →</a>
+      </aside>
+    </section>
+    <section class="estimator-note wrap">
+      <b class="note-icon" aria-hidden="true">i</b>
+      <p><strong>These are rough estimates.</strong> Actual device weight varies by model and accessories. The calculation is for awareness only; it does not measure environmental impact or replace a recycler’s weighing process. Check with your local authorised collector for accepted items and preparation instructions.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <section class="wrap footer-content" aria-label="Site information">
+      <section class="footer-brand" aria-label="About TECH-MORROW"><a class="brand brand-footer" href="index.html"><b class="brand-mark" aria-hidden="true">↻</b> TECH-MORROW</a><p>A student project for a cleaner digital future.</p></section>
+      <section class="footer-contact"><h2>Get in touch</h2><a href="mailto:mirzaayan85500@gmail.com">mirzaayan85500@gmail.com</a><a href="review.html">Leave a website review ↗</a></section>
+      <section class="footer-resources" aria-label="Explore e-waste resources"><h2>Explore e-waste resources</h2><nav class="footer-link-grid" aria-label="External e-waste resources"><a href="https://globalewaste.org/" target="_blank" rel="noopener noreferrer">Global E-waste Monitor</a><a href="https://www.who.int/news-room/fact-sheets/detail/electronic-waste-%28e-waste%29" target="_blank" rel="noopener noreferrer">World Health Organization</a><a href="https://weee-forum.org/" target="_blank" rel="noopener noreferrer">WEEE Forum</a><a href="https://www.basel.int/Implementation/Overview/tabid/4063/Default.aspx" target="_blank" rel="noopener noreferrer">Basel Convention</a><a href="https://www.epa.gov/recycle/electronics-donation-and-recycling" target="_blank" rel="noopener noreferrer">US EPA</a><a href="https://cpcb.gov.in/e-waste/" target="_blank" rel="noopener noreferrer">India CPCB</a><a href="https://www.gov.uk/guidance/regulations-waste-electrical-and-electronic-equipment" target="_blank" rel="noopener noreferrer">UK WEEE information</a></nav></section>
+    </section>
+    <section class="wrap footer-bottom" aria-label="Footer notes"><p>Learn · Act · Recycle</p><p>External links open in a new tab.</p></section>
+  </footer>
+  <script src="estimator.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

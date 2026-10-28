@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request, buy, or offer used electronics through the TECH-MORROW community shop.">
+  <title>Community tech shop | TECH-MORROW</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="TECH-MORROW home"><b class="brand-mark" aria-hidden="true">↻</b> TECH-MORROW</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="types.html">E-waste basics</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="estimator.html">Estimator</a>
+      <a href="quiz.html">Quick quiz</a>
+      <a class="current" href="tech_shop.html" aria-current="page">Tech shop</a>
+      <a class="nav-cta" href="pledge.html">Make a pledge ↗</a>
+      <section class="nav-tools" aria-label="Appearance settings">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">◐</button>
+      </section>
+    </nav>
+  </header>
+  <main>
+    <section class="review-hero wrap">
+      <p class="eyebrow"><b class="dot" aria-hidden="true"></b> BUY AND SELL COMMUNITY TECH</p>
+      <h1>Good tech.<br><strong>New owners.</strong></h1>
+      <p class="hero-intro">Find a second home for a working device, or tell us what you are looking for. Reusing electronics can keep useful equipment in service for longer.</p>
+    </section>
+
+    <aside class="callout wrap" aria-label="Current shop listings">
+      <b class="callout-mark" aria-hidden="true">↻</b>
+      <p><strong>No devices are listed yet.</strong> Send a request if you are looking for a device, or share an item you would like to sell. We will connect interested buyers and sellers by email.</p>
+      <a class="text-link" href="#buy-request">Make a request →</a>
+    </aside>
+
+    <section class="review-area wrap" aria-label="Buy or sell a device">
+      <form id="buy-request" class="review-form" action="mailto:mirzaayan85500@gmail.com?subject=TECH-MORROW%20device%20request" method="post" enctype="text/plain" aria-label="Request a device">
+        <p class="eyebrow">BUY A DEVICE</p>
+        <h2>What are you looking for?</h2>
+        <p>Send a request and we can share it with people who list a matching device.</p>
+
+        <label for="buyer-name">Your name</label>
+        <input id="buyer-name" name="Buyer name" type="text" autocomplete="name" required>
+
+        <label for="buyer-email">Your email</label>
+        <input id="buyer-email" name="Buyer email" type="email" autocomplete="email" required>
+
+        <label for="buyer-device">Device type</label>
+        <select id="buyer-device" name="Device wanted" required>
+          <option value="" selected disabled>Choose a device</option>
+          <option>Phone</option>
+          <option>Tablet</option>
+          <option>Laptop or computer</option>
+          <option>Monitor or TV</option>
+          <option>Accessories</option>
+          <option>Other</option>
+        </select>
+
+        <label for="buyer-budget">Budget in rupees (optional)</label>
+        <input id="buyer-budget" name="Budget in rupees" type="number" min="0" step="500" inputmode="numeric">
+
+        <label for="buyer-location">City or area</label>
+        <input id="buyer-location" name="Buyer city or area" type="text" autocomplete="address-level2" required>
+
+        <label for="buyer-notes">Details you would like us to know <small>(optional)</small></label>
+        <textarea id="buyer-notes" name="Buyer request details" rows="4" maxlength="500"></textarea>
+
+        <button class="button button-dark" type="submit">Send a device request →</button>
+        <p class="review-message">Your browser may open an email draft. Sending a request does not reserve or purchase an item.</p>
+      <p class="review-message">If your email app does not open, email <a href="mailto:mirzaayan85500@gmail.com">mirzaayan85500@gmail.com</a> and include your request details.</p>
+      </form>
+
+      <form id="sell-device" class="review-form" action="mailto:mirzaayan85500@gmail.com?subject=TECH-MORROW%20device%20listing" method="post" enctype="text/plain" aria-label="Offer a device for sale">
+        <p class="eyebrow">SELL A DEVICE</p>
+        <h2>Share an item to sell.</h2>
+        <p>Describe a device that is working or can be repaired. Please include its condition and asking price.</p>
+
+        <label for="seller-name">Your name</label>
+        <input id="seller-name" name="Seller name" type="text" autocomplete="name" required>
+
+        <label for="seller-email">Your email</label>
+        <input id="seller-email" name="Seller email" type="email" autocomplete="email" required>
+
+        <label for="seller-device">Device and model</label>
+        <input id="seller-device" name="Device and model" type="text" placeholder="e.g. tablet, model name" required>
+
+        <label for="seller-condition">Condition</label>
+        <select id="seller-condition" name="Device condition" required>
+          <option value="" selected disabled>Choose the condition</option>
+          <option>Works like new</option>
+          <option>Works, with signs of use</option>
+          <option>Needs repair</option>
+        </select>
+
+        <label for="seller-price">Asking price in rupees</label>
+        <input id="seller-price" name="Asking price in rupees" type="number" min="0" step="1" inputmode="numeric" required>
+
+        <label for="seller-location">City or area</label>
+        <input id="seller-location" name="Seller city or area" type="text" autocomplete="address-level2" required>
+
+        <label for="seller-details">Description</label>
+        <textarea id="seller-details" name="Device description" rows="4" maxlength="700" placeholder="Mention included accessories, faults, and anything a buyer should know." required></textarea>
+
+        <button class="button button-dark" type="submit">Send a sale listing →</button>
+        <p class="review-message">Your browser may open an email draft. Add clear device photos before sending; listings are reviewed and shared by the project team.</p>
+      <p class="review-message">If your email app does not open, email <a href="mailto:mirzaayan85500@gmail.com">mirzaayan85500@gmail.com</a> and include the listing details and photos.</p>
+      </form>
+    </section>
+
+    <section class="callout wrap" aria-label="How the community shop works">
+      <b class="callout-mark" aria-hidden="true">i</b>
+      <p><strong>Contact and payment are arranged directly.</strong> This page collects email requests; it does not take payment, guarantee availability, or store listings. Confirm a device's condition and the agreed details before completing a sale.</p>
+      <a class="text-link" href="mailto:mirzaayan85500@gmail.com?subject=TECH-MORROW%20shop%20question">Ask a question ↗</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <section class="wrap footer-content" aria-label="Site information">
+      <section class="footer-brand" aria-label="About TECH-MORROW"><a class="brand brand-footer" href="index.html"><b class="brand-mark" aria-hidden="true">↻</b> TECH-MORROW</a><p>A student project for a cleaner digital future.</p></section>
+      <section class="footer-contact"><h2>Get in touch</h2><a href="mailto:mirzaayan85500@gmail.com">mirzaayan85500@gmail.com</a><a href="review.html">Leave a website review ↗</a></section>
+      <section class="footer-resources"><h2>Explore e-waste resources</h2><nav class="footer-link-grid" aria-label="External e-waste resources"><a href="https://globalewaste.org/" target="_blank" rel="noopener noreferrer">Global E-waste Monitor</a><a href="https://www.who.int/news-room/fact-sheets/detail/electronic-waste-%28e-waste%29" target="_blank" rel="noopener noreferrer">World Health Organization</a><a href="https://weee-forum.org/" target="_blank" rel="noopener noreferrer">WEEE Forum</a><a href="https://www.basel.int/Implementation/Overview/tabid/4063/Default.aspx" target="_blank" rel="noopener noreferrer">Basel Convention</a><a href="https://www.epa.gov/recycle/electronics-donation-and-recycling" target="_blank" rel="noopener noreferrer">US EPA</a><a href="https://cpcb.gov.in/e-waste/" target="_blank" rel="noopener noreferrer">India CPCB</a><a href="https://www.gov.uk/guidance/regulations-waste-electrical-and-electronic-equipment" target="_blank" rel="noopener noreferrer">UK WEEE information</a></nav></section>
+    </section>
+    <section class="wrap footer-bottom" aria-label="Footer notes"><p>Learn · Act · Recycle</p><p>External links open in a new tab.</p></section>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

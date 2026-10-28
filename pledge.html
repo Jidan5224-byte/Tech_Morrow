@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Make an e-waste pledge and search for a collection centre near you.">
+  <title>Make a pledge | TECH-MORROW</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><b class="brand-mark" aria-hidden="true">↻</b> TECH-MORROW</a><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="types.html">E-waste basics</a><a href="solutions.html">Solutions</a><a href="estimator.html">Estimator</a><a href="quiz.html">Quick quiz</a>
+      <a href="tech_shop.html">Tech shop</a>
+      <a class="nav-cta current-cta" href="pledge.html" aria-current="page">Make a pledge ↗</a><section class="nav-tools" aria-label="Appearance settings">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">◐</button>
+      </section>
+      </nav></header>
+  <main>
+    <section class="pledge-heading wrap"><div><p class="eyebrow"><b class="dot" aria-hidden="true"></b> MAKE IT PERSONAL</p><h1>One good choice<br>starts <strong>right here.</strong></h1><p class="hero-intro">Make a simple promise to give your next unwanted device a responsible next step. Then look for a collection point near you.</p></div><figure class="pledge-stamp"><small>YOUR</small><strong>e-waste<br>pledge</strong><i>✳</i></figure></section>
+    <section class="pledge-area wrap">
+      <section class="form-panel"><p class="eyebrow">THE PLEDGE</p><h2>I will handle e-waste with care.</h2><p class="form-intro">Add your name and choose one action to get started.</p>
+        <form id="pledge-form">
+          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="e.g. Sam" required>
+          <label for="email">Email <small>(optional)</small></label><input id="email" name="email" type="email" placeholder="you@example.com">
+          <label for="action">My first action</label><select id="action" name="action" required><option value="" selected disabled>Choose an action</option><option>Repair a device before replacing it</option><option>Donate or pass on working electronics</option><option>Find an authorised e-waste collector</option><option>Keep batteries out of household rubbish</option></select>
+          <label class="check-label"><input id="agree" name="agree" type="checkbox" required><small>I will keep electronics out of regular household rubbish.</small></label>
+          <button class="button button-dark form-button" type="submit">Make my pledge →</button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section class="map-panel"><header class="map-heading"><section><p class="eyebrow">FIND A DROP-OFF</p><h2>Look nearby.</h2></section><b class="map-pin" aria-hidden="true">⌖</b></header><p>Search for e-waste collection organisations around your area.</p>
+        <form id="map-search" class="map-search"><label class="visually-hidden" for="location">City, area, or postcode</label><input type="search" id="location" name="location" placeholder="Enter city, area, or postcode" required><button type="submit" aria-label="Search map">→</button></form>
+        <figure class="map-frame"><iframe id="collection-map" title="Map search for nearby e-waste collection organisations" src="https://www.google.com/maps?q=e-waste+collection+centre+near+me&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></figure>
+        <p class="map-note">Map results are provided by Google Maps. Confirm opening hours and accepted items directly with the organisation.</p>
+      </section>
+    </section>
+    <section class="thankyou wrap"><strong>✳</strong><p><strong>Thank you for choosing a better next step.</strong><br>Share the idea with a friend or family member.</p></section>
+  </main>
+  <footer class="site-footer">
+    <section class="wrap footer-content" aria-label="Site information">
+      <section class="footer-brand" aria-label="About TECH-MORROW"><a class="brand brand-footer" href="index.html"><b class="brand-mark" aria-hidden="true">↻</b> TECH-MORROW</a><p>A student project for a cleaner digital future.</p></section>
+      <section class="footer-contact"><h2>Get in touch</h2><a href="mailto:mirzaayan85500@gmail.com">mirzaayan85500@gmail.com</a><a href="review.html">Leave a website review ↗</a></section>
+      <section class="footer-resources" aria-label="Explore e-waste resources"><h2>Explore e-waste resources</h2><nav class="footer-link-grid" aria-label="External e-waste resources"><a href="https://globalewaste.org/" target="_blank" rel="noopener noreferrer">Global E-waste Monitor</a><a href="https://www.who.int/news-room/fact-sheets/detail/electronic-waste-%28e-waste%29" target="_blank" rel="noopener noreferrer">World Health Organization</a><a href="https://weee-forum.org/" target="_blank" rel="noopener noreferrer">WEEE Forum</a><a href="https://www.basel.int/Implementation/Overview/tabid/4063/Default.aspx" target="_blank" rel="noopener noreferrer">Basel Convention</a><a href="https://www.epa.gov/recycle/electronics-donation-and-recycling" target="_blank" rel="noopener noreferrer">US EPA</a><a href="https://cpcb.gov.in/e-waste/" target="_blank" rel="noopener noreferrer">India CPCB</a><a href="https://www.gov.uk/guidance/regulations-waste-electrical-and-electronic-equipment" target="_blank" rel="noopener noreferrer">UK WEEE information</a></nav></section>
+    </section>
+    <section class="wrap footer-bottom" aria-label="Footer notes"><p>Learn · Act · Recycle</p><p>External links open in a new tab.</p></section>
+  </footer>
+  <script src="script.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
